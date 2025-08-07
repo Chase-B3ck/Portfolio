@@ -55,16 +55,40 @@
 
     section {
       padding: 40px 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       border-bottom: 1px solid #ddd;
     }
 
     .project {
-      margin-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 40px;
+      align-items: flex-start;
     }
 
-    a {
+    .project img {
+      width: 180px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 8px;
       color: #007acc;
       text-decoration: none;
     }
@@ -74,6 +98,24 @@
       font-size: 0.9em;
       color: #aaa;
       padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .project {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project img {
+        width: 100%;
+        height: auto;
+      }
+
+      nav {
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
@@ -98,15 +140,21 @@
   <h2>Simulation Projects</h2>
 
   <div class="project">
-    <h3>Rocket Trajectory Simulator</h3>
-    <p>Python-based simulator for tracking rocket motion beyond Earth’s atmosphere. Used numerical methods to calculate thrust and orbital velocity.</p>
-    <a href="https://github.com/your-username/rocket-sim">View on GitHub →</a>
+    <img src="images/rocket.jpeg" alt="Rocket Simulator">
+    <div class="project-text">
+      <h3>Rocket Trajectory Simulator</h3>
+      <p>Python-based simulator for tracking rocket motion beyond Earth’s atmosphere. Used numerical methods to calculate thrust and orbital velocity.</p>
+      <a href="https://github.com/your-username/rocket-sim">View on GitHub →</a>
+    </div>
   </div>
 
   <div class="project">
-    <h3>Forklift Load Stability Model</h3>
-    <p>Simulates load distribution and tipping risk under dynamic forklift movement using center-of-mass and moment calculations.</p>
-    <a href="https://github.com/your-username/forklift-model">View on GitHub →</a>
+    <img src="images/forklift.jpeg" alt="Forklift Model">
+    <div class="project-text">
+      <h3>Forklift Load Stability Model</h3>
+      <p>Simulates load distribution and tipping risk under dynamic forklift movement using center-of-mass and moment calculations.</p>
+      <a href="https://github.com/your-username/forklift-model">View on GitHub →</a>
+    </div>
   </div>
 
 </section>
@@ -115,9 +163,12 @@
   <h2>Mechanical Design Projects</h2>
 
   <div class="project">
-    <h3>3D Printed Engine Mount</h3>
-    <p>Designed and prototyped a lightweight engine mount using Fusion 360 and validated via finite element analysis (FEA).</p>
-    <a href="https://github.com/your-username/engine-mount">View on GitHub →</a>
+    <img src="images/engine.png" alt="Engine Mount">
+    <div class="project-text">
+      <h3>3D Printed Engine Mount</h3>
+      <p>Designed and prototyped a lightweight engine mount using Fusion 360 and validated via finite element analysis (FEA).</p>
+      <a href="https://github.com/your-username/engine-mount">View on GitHub →</a>
+    </div>
   </div>
 
 </section>
@@ -126,9 +177,12 @@
   <h2>Software Tools</h2>
 
   <div class="project">
-    <h3>Thermal Load Calculator Web App</h3>
-    <p>Simple HTML/JS web app for estimating thermal loads in HVAC systems based on input parameters like room size, insulation, and occupancy.</p>
-    <a href="https://github.com/your-username/thermal-app">View on GitHub →</a>
+    <img src="images/thermal.png" alt="Thermal App">
+    <div class="project-text">
+      <h3>Thermal Load Calculator Web App</h3>
+      <p>Simple HTML/JS web app for estimating thermal loads in HVAC systems based on input parameters like room size, insulation, and occupancy.</p>
+      <a href="https://github.com/your-username/thermal-app">View on GitHub →</a>
+    </div>
   </div>
 
 </section>
@@ -142,6 +196,11 @@
 
 <footer>
   &copy; 2025 Chase Beck
+</footer>
+
+</body>
+</html>
+
 </footer>
 
 </body>
