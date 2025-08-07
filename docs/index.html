@@ -2,30 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Name | Portfolio</title>
+  <title>Chase Beck | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-    header { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; }
-    h1 { margin-bottom: 0; }
-    h2 { color: #1a1a1a; }
-    section { padding: 40px 20px; max-width: 800px; margin: auto; }
-    .project { margin-bottom: 30px; }
-    a { color: #007acc; text-decoration: none; }
-    footer { text-align: center; font-size: 0.9em; color: #aaa; padding: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #1a1a1a;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    nav a {
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      margin-left: 10px;
+      border-radius: 5px;
+      font-size: 0.9em;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #005f99;
+    }
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      color: #1a1a1a;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .project {
+      margin-bottom: 30px;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
 
 <header>
+  <nav>
+    <a href="ChaseBeck_Resume.pdf" download>Download Résumé</a>
+    <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+    <a href="https://github.com/your-username" target="_blank">GitHub</a>
+  </nav>
   <h1>Chase Beck</h1>
   <p>Simulation & Mechanical Engineering Portfolio</p>
 </header>
 
 <section>
   <h2>About Me</h2>
-  <p>I’m a mechanical engineering student with a passion for modeling, simulation, and problem-solving.</p>
+  <p>I’m a mechanical engineering student with a passion for modeling, simulation, and problem-solving. I use tools like Python, Excel, CAD, and numerical methods to analyze complex systems and develop innovative solutions.</p>
 </section>
 
-<s
+<section>
+  <h2>Simulation Projects</h2>
 
+  <div class="project">
+    <h3>Rocket Trajectory Simulator</h3>
+    <p>Python-based simulator for tracking rocket motion beyond Earth’s atmosphere. Used numerical methods to calculate thrust and orbital velocity.</p>
+    <a href="https://github.com/your-username/rocket-sim">View on GitHub →</a>
+  </div>
+
+  <div class="project">
+    <h3>Forklift Load Stability Model</h3>
+    <p>Simulates load distribution and tipping risk under dynamic forklift movement using center-of-mass and moment calculations.</p>
+    <a href="https://github.com/your-username/forklift-model">View on GitHub →</a>
+  </div>
+
+</section>
+
+<section>
+  <h2>Mechanical Design Projects</h2>
+
+  <div class="project">
+    <h3>3D Printed Engine Mount</h3>
+    <p>Designed and prototyped a lightweight engine mount using Fusion 360 and validated via finite element analysis (FEA).</p>
+    <a href="https://github.com/your-username/engine-mount">View on GitHub →</a>
+  </div>
+
+</section>
+
+<section>
+  <h2>Software Tools</h2>
+
+  <div class="project">
+    <h3>Thermal Load Calculator Web App</h3>
+    <p>Simple HTML/JS web app for estimating thermal loads in HVAC systems based on input parameters like room size, insulation, and occupancy.</p>
+    <a href="https://github.com/your-username/thermal-app">View on GitHub →</a>
+  </div>
+
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:chase@example.com">chase@example.com</a></p>
+  <p>GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/your-profile">linkedin.com/in/your-profile</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Chase Beck
+</footer>
+
+</body>
+</html>
