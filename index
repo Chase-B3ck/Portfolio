@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Name | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; }
+    h1 { margin-bottom: 0; }
+    h2 { color: #1a1a1a; }
+    section { padding: 40px 20px; max-width: 800px; margin: auto; }
+    .project { margin-bottom: 30px; }
+    a { color: #007acc; text-decoration: none; }
+    footer { text-align: center; font-size: 0.9em; color: #aaa; padding: 20px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Chase Beck</h1>
+  <p>Simulation & Mechanical Engineering Portfolio</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>I’m a mechanical engineering student with a passion for modeling, simulation, and problem-solving. I use tools like MATLAB, Python, and CAD to analyze systems and create robust designs.</p>
+</section>
+
+<s
